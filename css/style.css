@@ -9,44 +9,30 @@ header{
     background: white;
     color: darkblue;
 }
-button{
-    text-align: center;
-}
-nav{
-   display: flex;
-   justify-content: center;
-   padding: 0.75rem 0;
-   background: #003f87;
-   position: sticky;
-   top: 0%;
-   z-index: 100;
-
-}
-nav a{
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1.5rem;
-    margin: 0 0.5rem;
-    border-radius: 4px;
-}
 .hidden {
     display: none;
 }
 body{
     font-family: arial,sans-serif;
     line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+.Background{
+    background-image: url('/SportsClub/assest/image/background.png')  ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: min-content;
-    background: skyblue;
 }
 
 .Signin-container {
-    background-image: ;
-    max-width: 500px;
-    background: gray;
-    color: aliceblue;
+    position: relative;
+    max-width: 400px;
+    height: 400px;
+    background:ghostwhite;
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 8px;
@@ -56,6 +42,7 @@ body{
     font-size: 25px;
     text-align: center;
 }
+
 form-group input::placeholder{
     color: aliceblue;
 
@@ -67,12 +54,18 @@ button {
     background-color: #007bff; /* Blue color */
     color: white;
     border: none;
-    border-radius: 4px;
+    outline: none;
+    border-radius: 40px;
     font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
     transition: bg 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
+}
+footer{
+    text-align:center ;
+    background-color: #ddd;
 }
