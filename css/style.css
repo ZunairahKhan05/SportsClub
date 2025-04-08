@@ -29,7 +29,12 @@ nav a{
     margin: 0 0.5rem;
     border-radius: 4px;
 }
+.hidden {
+    display: none;
+}
 body{
+    font-family: arial,sans-serif;
+    line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +43,7 @@ body{
 }
 
 .Signin-container {
+    background-image: ;
     max-width: 500px;
     background: gray;
     color: aliceblue;
