@@ -1,25 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    text-align: center;
-    font-weight: 100;
-    background: white;
-    color: darkblue;
+
+.dark-mode {
+    background-color: #f90606;
+    color: #201d1d;
 }
+
+.dark-mode input,
+.dark-mode button,
+.dark-mode a {
+    background-color: #cf0e0e;
+    color: black;
+}
+
+.dark-toggle {
+    position: fixed; 
+    top: 1rem;
+    right: 1rem;
+    height: 1cm;
+    width: 1cm;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #003F87;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; /* corrected 'bg' to 'background-color' */
+}
+
+button:hover {
+    background-color: blue;
+}
+
 .hidden {
     display: none;
 }
-body{
-    font-family: arial,sans-serif;
-    line-height: 1.6;
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* corrected from '1.6p' */
     color: var(--dark-color);
     background-color: var(--light-color);
 }
-.Background{
-    background-image: url('/SportsClub/assest/image/background.png')  ;
+
+.Background {
+    background-image: url('/assest/image/background.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -28,55 +65,31 @@ body{
     align-items: center;
 }
 
-.Signin-container {
+.signin-container {
     position: relative;
     max-width: 400px;
     height: 400px;
-    background:ghostwhite;
+    background: rgb(240, 240, 243);
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
-.Signin-container h2{
-    font-size: 25px;
+.signin-container h2{
     text-align: center;
 }
-.form-group{
-    cursor: pointer;
-}
-
-button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #007bff; /* Blue color */
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: bg 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-.form-group input:focus {
-    cursor: pointer;
-    border-color: #007bff;  /* Focus color */
-    outline: none;  /* Remove default outline */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Focus shadow effect */
-}
-.form-group{
+.form-group {
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
-.form-group label{
+
+.form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 100;
 }
+
 .form-group input {
     width: 100%;
     padding: 0.75rem;
@@ -84,12 +97,19 @@ button:hover {
     border-radius: 4px;
     font-size: 1rem;
 }
-.form-link{
-    margin-top: 1.5rem;
-    text-align: center;
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-footer{
-    text-align:center ;
-    background-color: #ddd;
+.remember-forget {
+    text-align: left;
+    margin-top: 1rem; /* 'top' alone doesn't work unless positioned */
+}
+
+.form-links {
+    margin-top: 1.5rem;
+    text-align: center;
 }
