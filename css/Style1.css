@@ -11,6 +11,7 @@ body{
     align-items: center;
 }
 .Signin-container{
+    font-size: 1.5cap;
     max-width: 600px;
     height: 500px;
     margin: auto;
@@ -20,7 +21,6 @@ body{
     box-shadow: 0 4px 12px rgba(red, green, blue, alpha);
 }
 .Signin-container h1{
-    align-items: top;
     text-align: center;
 }
 form-group {
@@ -31,19 +31,32 @@ form-group {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 50;
+    font-weight: 30;
 }
 
 .form-group input {
-    width: 100%;
+    width: 90%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    font-size: 1rem;
+    border: 0.5px solid #ddd;
+    border-radius: 1px;
+    font-size: 0.5rem;
 }
 
 .form-group input:focus {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #003F87;
+    color: white;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; /* corrected 'bg' to 'background-color' */
+
 }
