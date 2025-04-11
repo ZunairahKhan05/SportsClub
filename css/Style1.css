@@ -1,0 +1,49 @@
+body{
+    background-color: azure;
+}
+.Background {
+    background-image: url('/assest/image/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Signin-container{
+    max-width: 600px;
+    height: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(red, green, blue, alpha);
+}
+.Signin-container h1{
+    align-items: top;
+    text-align: center;
+}
+form-group {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 50;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
