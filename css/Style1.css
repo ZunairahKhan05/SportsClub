@@ -57,6 +57,6 @@ button{
     font-weight: 500;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease; /* corrected 'bg' to 'background-color' */
+    transition: background-color 0.3s ease;
 
 }
