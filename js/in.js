@@ -1,27 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggle-dark");
-    const body = document.body;
+    const form = document.querySelector("form");
 
-    // Check for saved theme preference
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-    }
+    // Add a container for alerts
+    const alertBox = document.createElement("div");
+    alertBox.classList.add("mt-3");
+    form.parentElement.appendChild(alertBox);
 
-    toggleButton.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default form submission
 
-        // Save preference
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
+        const emailInput = form.querySelector('input[type="email"]');
+        const passwordInput = form.querySelector('input[type="password"]');
+
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        // Clear any existing alerts
+        alertBox.innerHTML = "";
+
+        // Fetch user data from localStorage
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+
+        if (!storedUser) {
+            showAlert("No user data found. Please sign up first.", "danger");
+            return;
+        }
+
+        // Check credentials
+        if (email === storedUser.email && password === storedUser.password) {
+            alert(`✅ Login successful! Welcome back, ${storedUser.firstName}.`, "success");
+            // window.location.href = "dashboard.html";
         } else {
-            localStorage.removeItem("theme");
+            alert("❌ Invalid email or password. Please try again.", "danger");
         }
     });
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(link => {
-        link.addEventListener("click", function () {
-            navLinks.forEach(l => l.classList.remove("active"));
-            this.classList.add("active");
-        });
-    });
+
+    function showAlert(message, type) {
+        const alert = document.createElement("div");
+        alert.className = `alert alert-${type}`;
+        alert.textContent = message;
+        alertBox.appendChild(alert);
+    }
 });
