@@ -4,12 +4,19 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #3a8ef6, #8e44ad);
+    background-image: url(/SportsClub/assest/image/background.png);
     justify-content: center;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  
 }
 .Signin-container {
     text-align: center;
@@ -44,7 +51,7 @@ body {
 .Signin-container button{
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #3a8ef6, #8e44ad);
+    background: linear-gradient(to right, #3a8ef6,#0f62c9);
     color: #fff;
     border: none;
     border-radius: 6px;

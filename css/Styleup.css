@@ -5,13 +5,15 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #3a8ef6, #8e44ad);
+
+    background-image: url(/SportsClub/assest/image/background.png);
+    background-size: cover;
+    background-position: center;
 }
 .Signup-container{
     background-color: aliceblue;
@@ -49,7 +51,7 @@ body{
 .Signup-container button{
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #3a8ef6, #8e44ad);
+    background: linear-gradient(to right, #3a8ef6, #0f62c9);
     color: #fff;
     border: none;
     border-radius: 6px;
