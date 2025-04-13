@@ -6,17 +6,13 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
     align-items: center;
     background-image: url(/SportsClub/assest/image/background.png);
     justify-content: center;
     height: 100vh;
-
     background-size: cover;
     background-position: center;
-    height: 100vh;
-  
 }
 .Signin-container {
     text-align: center;
