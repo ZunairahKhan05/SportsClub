@@ -3,14 +3,14 @@
     padding: 0;
 }
 
-
+/* HEADER CSS - universal for all pages */
 
 header{
     background-color:#0a7cc8;
-    /* background-color:#0A7CC8; */
     padding: 5px;
     position: sticky;
 }
+
 .logo img{
     width: 75px;
     height: 45px;
@@ -22,30 +22,20 @@ header{
 
 
 .navbar{
-    /* display: flex; */
     height: 70px;
-    /* align-items: center;  */
-    /* justify-content: space-between; */
     position: none;
-     /* top: 0; */
     cursor: pointer;
-    /* text-align: center; */
     background-color:#0a7cc8;
-    /* background: linear-gradient(to right, rgba(10, 124, 200, 0.9), rgba(10, 124, 200, 0.9));  */
-    /* background: rgb(10, 124, 200); */
 }
 
 
 .nav-list li{
     list-style: none;
     text-decoration:none;
-    /* padding: 12px;  */
 }
 
 .nav-list li a{
-    /* text-decoration: none; */
     color: black;
-    /* display: inline; */
 }
 
 .nav-list li a:hover{
@@ -62,33 +52,6 @@ header{
     padding-top: 12px;
 } 
 
-
-button:hover {
-    background-color: grey;
-}
-
-
-.icon {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.icon i {
-    margin: 0 10px;
-    font-size: 20px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 .theme-toggle {
     padding:  5px;
     margin: 5px;
@@ -100,25 +63,10 @@ img {
     border-radius: 5px;
     height: auto;
     width:fit-content;
-    /* position: fixed; */
 }
 
-.button-home{
-    padding:  5px;
-    margin: 5px;
-    cursor: pointer;
-    background-color: #0a7cc8;
-    color: white;
-    font-size: small;
-    border-color: white;
-    border-radius: 7px;
-    width:fit-content;
-    /* position: fixed; */
-}
-
-.button-home:hover {
+button:hover {
     background-color: grey;
-    color: white;
 }
 
 .search-bar{
@@ -133,16 +81,40 @@ img {
 }
 
 
+/* HOME CSS  */
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-home{
+    padding:  5px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #0a7cc8;
+    color: white;
+    font-size: small;
+    border-color: white;
+    border-radius: 7px;
+    width:fit-content;
+}
+
+.button-home:hover {
+    background-color: grey;
+    color: white;
+}
+
+
 .background{
-    background: rgb(0, 0, 0, 0.7) url('../images/sports1.jpeg');
+    background: rgb(0, 0, 0, 0.7) url('../images/sportsbg.jpeg');
     background-size: cover;
     background-blend-mode: darken;
     height: 100vh;
-    /* justify-content: center; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* padding: 20px; */
-    
 }
 
 
@@ -154,6 +126,7 @@ img {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 50%;
     margin: auto;
+    margin-top: 60px;
     height: 80%;
 }
 
@@ -200,6 +173,9 @@ img {
     color: white;
 }
 
+
+/* CONTACT CSS */
+
 .intro {
     text-align: center;
     padding: 2rem;
@@ -207,7 +183,7 @@ img {
 }
 
 .background-contact{
-    background: rgb(0, 0, 0, 0.7) url('../images/sports1.jpeg');
+    background: rgb(0, 0, 0, 0.7) url('../images/sportsbg.jpeg');
     background-size: cover;
     background-blend-mode: darken;
     padding: 40px 0;
@@ -215,7 +191,6 @@ img {
 }
 
 .contact-form button[type="submit"] {
-    /* background-color: blue; */
     color: white;
     border: none;
     padding: 0.7rem 1.2rem;
@@ -225,10 +200,6 @@ img {
     transition: background-color 0.3s ease;
 }
 
-/* button:hover,
-.contact-form button[type="submit"]:hover {
-    background-color: yellow;
-} */
 
 .contact-section {
     max-width: 600px;
@@ -239,8 +210,6 @@ img {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* margin-bottom: 500px; */
-    /* transition: background 0.3s; */
 }
 
 .contact-form label {
@@ -259,6 +228,8 @@ img {
 }
 
 
+/* FOOTER CSS */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -266,77 +237,80 @@ footer {
 }
 
 
+/* DARK-MODE CSS */
 
 body.dark-mode {
     background-color: rgba(61, 61, 61, 0.945);
     color: #e0e0e0;
   }
   
-  body.dark-mode .navbar,
+body.dark-mode .navbar,
 body.dark-mode footer {
   background: #042c44;
   color: #e0e0e0;
   border-color: #042c44;
 }
-  
-  body.dark-mode .navbar .rightNav .nav-list {
+
+body.dark-mode .navbar .rightNav .nav-list {
     background: #042c44;
     color: #e0e0e0;
   }
-  body.dark-mode .nav-list li a {
+
+
+body.dark-mode .nav-list li a {
     color: #e0e0e0;
   }
   
-  body.dark-mode .nav-list li a:hover {
+body.dark-mode .nav-list li a:hover {
     color: #90caf9;
   }
   
-  body.dark-mode .btn-sm,
-  body.dark-mode .theme-toggle {
+body.dark-mode .btn-sm,
+body.dark-mode .theme-toggle {
     background-color: #333;
     color: #fff;
     border: 1px solid #555;
   }
   
-  body.dark-mode .button-home{
+body.dark-mode .button-home{
     background-color: #042c44;
     color: #f1f1f1;
     border-color: #777;
   }
 
 
-  body.dark-mode .btn-sm:hover,
-  body.dark-mode .theme-toggle:hover,
-  body.dark-mode .button-home:hover {
+body.dark-mode .btn-sm:hover,
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .button-home:hover {
     background-color: #555;
-  }
+}
   
-  body.dark-mode .background, 
-  body.dark-mode .background-contact {
+body.dark-mode .background, 
+body.dark-mode .background-contact {
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
 
-  body.dark-mode .contact-section,
-  body.dark-mode .contact-form {
+body.dark-mode .contact-section,
+body.dark-mode .contact-form {
     background-color: #252525;
     color: #fff;
-  }
+}
   
-  body.dark-mode .box-main {
+body.dark-mode .box-main {
     color: #f1f1f1;
-  }
+}
   
-  body.dark-mode .text-big {
+body.dark-mode .text-big {
     color: #90caf9;
-  }
+}
   
-  body.dark-mode .text-big2 {
+body.dark-mode .text-big2 {
     color: #bbdefb;
-  }
+}
   
-  body.dark-mode img {
+body.dark-mode img {
     border-color: #777;
-  }
+}
   
   
