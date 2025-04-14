@@ -3,31 +3,6 @@
     padding: 0;
 }
 
-/* :root {
-    --bg: #f4f4f4;
-    --text: #333;
-    --header: #007bff;
-    --footer: #ddd;
-    --card: #ffffff;
-    --button-bg: #007bff;
-    --button-hover: #0056b3;} */
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* header{
-    background-color: #1a3e6f;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-} */
 
 
 header{
@@ -46,41 +21,6 @@ header{
 }
 
 
-
-
-/* nav {
-    display: flex;
-    /* justify-content: center;
-    background-color: #2a5ba7;
-    padding: 0.5rem;
-    width: 50%;  
-    width: 50%;
-    background-color: rgb(13, 58, 94);
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: grey;
-} */
-
 .navbar{
     /* display: flex; */
     height: 70px;
@@ -94,14 +34,6 @@ nav ul li a:hover {
     /* background: linear-gradient(to right, rgba(10, 124, 200, 0.9), rgba(10, 124, 200, 0.9));  */
     /* background: rgb(10, 124, 200); */
 }
-
-/* .nav-list{
-    width: 50%;
-     background-color: rgb(13, 58, 94); 
-     background-blend-mode: darken; 
-    display: flex;
-    align-items: center;
-}  */
 
 
 .nav-list li{
@@ -131,20 +63,6 @@ nav ul li a:hover {
 } 
 
 
-/* .btn-sm {
-    padding: 6px;
-    margin: 6px;
-    cursor: pointer;
-    background-color: rgb(20, 51, 67);
-    color: white;
-    border: none;
-    border-radius: 5px;
-} */
-
-
- 
-
-
 button:hover {
     background-color: grey;
 }
@@ -170,10 +88,6 @@ img {
     margin-right: auto;
 }
 
-/* main {
-    margin-top: 20px;
-    text-align: center;
-} */
 
 .theme-toggle {
     padding:  5px;
@@ -223,11 +137,14 @@ img {
     background: rgb(0, 0, 0, 0.7) url('../images/sports1.jpeg');
     background-size: cover;
     background-blend-mode: darken;
+    height: 100vh;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding: 20px; */
+    
 }
 
-.firstsection{
-    height: 100vh;
-}
 
 .box-main{
     display: flex;
@@ -280,7 +197,67 @@ img {
     text-align: center;
     margin-top: 7px;
     font-size: 17px;
+    color: white;
 }
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 55px;
+}
+
+.background-contact{
+    background: rgb(0, 0, 0, 0.7) url('../images/sports1.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.contact-form button[type="submit"] {
+    /* background-color: blue; */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* button:hover,
+.contact-form button[type="submit"]:hover {
+    background-color: yellow;
+} */
+
+.contact-section {
+    max-width: 600px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 500px; */
+    /* transition: background 0.3s; */
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 
 footer {
     text-align: center;
@@ -288,40 +265,6 @@ footer {
     background-color:#0a7cc8;  
 }
 
-
-
-/* body.dark-mode {
-    background-color: #042c44;
-    color: #eee;
-}
-
-header.dark-mode {
-    background-color: #042c44;
-    color: #eee;
-}
-
-footer.dark-mode{
-    background-color: #042c44;
-    color: #eee;
-}
-
-body.dark-mode navbar {
-    background-color: #444;
-}
-
-nav.dark-mode ul li a {
-    color: #fff;
-}
-
-button.dark-mode {
-    background-color: #212121;
-    color: #fff;
-}
-
-button.dark-mode:hover {
-    background-color: #424242;
-}
- */
 
 
 body.dark-mode {
@@ -335,17 +278,6 @@ body.dark-mode footer {
   color: #e0e0e0;
   border-color: #042c44;
 }
-
-/* body.dark-mode header {
-    background-color:#0A7CC8;
-} */
-  /* body.dark-mode header,
-  body.dark-mode nav,
-  body.dark-mode footer {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-    border-color: #333;
-  } */
   
   body.dark-mode .navbar .rightNav .nav-list {
     background: #042c44;
@@ -379,9 +311,16 @@ body.dark-mode footer {
     background-color: #555;
   }
   
-  body.dark-mode .background {
+  body.dark-mode .background, 
+  body.dark-mode .background-contact {
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  body.dark-mode .contact-section,
+  body.dark-mode .contact-form {
+    background-color: #252525;
+    color: #fff;
   }
   
   body.dark-mode .box-main {
