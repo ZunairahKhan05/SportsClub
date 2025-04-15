@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color:#0a7cc8;
+    background-color:#0A7CC8; 
+    padding: 5px;
+    position: sticky;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-image: url(/SportsClub/assest/image/abc.avif);
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.Signin-container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.Signin-container h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.Signin-container input[type="email"],
+.Signin-container input[type="password"]{
+    width:100%;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+}
+.Signin-container input:focus{
+    border-bottom-color: #8e44ad;
+}
+.Signin-container button{
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3a8ef6,#0f62c9);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.Sigin-container button:hover {
+    opacity: 0.9;
+  }
+
+.Signin-container .links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.Signin-container .links a {
+    color: #3a8ef6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Signin-container .links a:hover {
+    text-decoration: underline;
+}
+
+.Signin-container .links p {
+    margin: 10px 0 0;
+}
