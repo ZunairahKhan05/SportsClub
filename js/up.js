@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Optional: redirect after a short delay
         // setTimeout(() => window.location.href = "signin.html", 2000);
     });
-    
+
     function showAlert(message, type) {
         const alert = document.createElement("div");
         alert.className = `alert alert-${type}`;
@@ -51,11 +51,5 @@ document.addEventListener("DOMContentLoaded", function () {
         alertBox.appendChild(alert);
         setTimeout(() => alert.remove(), 4000);
 
-    }
-    const toggleThemeBtn = document.getElementById("toggleTheme");
-    if (toggleThemeBtn) {
-        toggleThemeBtn.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-        });
     }
 });

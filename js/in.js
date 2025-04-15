@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             showAlert("❌ Invalid email or password. Please try again.", "danger");
         }
-});
+    });
 
     function showAlert(message, type) {
         const alert = document.createElement("div");
@@ -42,11 +43,5 @@ document.addEventListener("DOMContentLoaded", function () {
         alertBox.appendChild(alert);
         setTimeout(() => alert.remove(), 4000);
     }
-    
-    const toggleThemeBtn = document.getElementById("toggleTheme");
-    if (toggleThemeBtn) {
-        toggleThemeBtn.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-        });
-    }
 });
+
