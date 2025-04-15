@@ -28,17 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Check credentials
         if (email === storedUser.email && password === storedUser.password) {
-            alert(`✅ Login successful! Welcome back, ${storedUser.firstName}.`, "success");
+            showAlert(`✅ Login successful! Welcome back, ${storedUser.firstName}.`, "success");
             // window.location.href = "dashboard.html";
         } else {
-            alert("❌ Invalid email or password. Please try again.", "danger");
+            showAlert("❌ Invalid email or password. Please try again.", "danger");
         }
-    });
+});
 
     function showAlert(message, type) {
         const alert = document.createElement("div");
         alert.className = `alert alert-${type}`;
         alert.textContent = message;
         alertBox.appendChild(alert);
+        setTimeout(() => alert.remove(), 4000);
+    }
+    
+    const toggleThemeBtn = document.getElementById("toggleTheme");
+    if (toggleThemeBtn) {
+        toggleThemeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
     }
 });
